@@ -1,0 +1,195 @@
+{
+	"geode": "6.0.0-beta.1",
+	"gd": {
+		"win": "2.2091",
+		"mac": "2.2091",
+		"android": "2.2091"
+	},
+	"version": "v2.0.0",
+	"id": "satire.how-to-ruin-gd",
+	"name": "How To Ruin Geometry Dash",
+	"developer": "Satire Dept.",
+	"description": "A parody mod that monetizes every button. Ubisoft has 'acquired' GD. All money is fictional wallet credit. Nothing is real, nothing touches GD servers.",
+	"tags": [
+		"fun",
+		"joke"
+	],
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		],
+		"files": [
+			"resources/*.ogg",
+			"resources/*.mp3",
+			"resources/*.json"
+		]
+	},
+	"settings": {
+		"t-brand": {
+			"type": "title",
+			"name": "Ubisoft Branding"
+		},
+		"enable-intro": {
+			"type": "bool",
+			"name": "Play Ubisoft intro",
+			"description": "Plays the Ubisoft logo intro once per game launch, before the main menu. Tap to skip.",
+			"default": true
+		},
+		"enable-ubisoft-notice": {
+			"type": "bool",
+			"name": "Show Ubisoft acquisition notice",
+			"description": "Shows the 'UBISOFT HAS ACQUIRED GEOMETRY DASH!' announcement once per game launch.",
+			"default": true
+		},
+		"ubisoft-branding": {
+			"type": "bool",
+			"name": "Ubisoft corporate terminology",
+			"description": "Uses corporate wording (Ubisoft Credits, Player Engagement Energy, Promotional Opportunities...). Labels only: nothing else changes.",
+			"default": true
+		},
+		"t-ads": {
+			"type": "title",
+			"name": "Promotional Opportunities"
+		},
+		"enable-ads": {
+			"type": "bool",
+			"name": "Enable advertisements",
+			"description": "Forced and banner ads. Rewarded ads are always optional.",
+			"default": true
+		},
+		"ad-every-n-attempts": {
+			"type": "int",
+			"name": "Forced ad every N attempts",
+			"default": 5,
+			"min": 2,
+			"max": 50
+		},
+		"t-energy": {
+			"type": "title",
+			"name": "Energy & Engagement Incentives"
+		},
+		"enable-energy": {
+			"type": "bool",
+			"name": "Enable energy",
+			"description": "On: energy is burned when you play and what you burn sets your payout. Off: no limits, but payouts are reduced (see 'Payout when energy is off').",
+			"default": true
+		},
+		"energy-per-level": {
+			"type": "int",
+			"name": "Energy per level",
+			"description": "Energy burned when a level starts. 2 pays exactly the listed reward; each point more or less changes the payout by 25% (times the multiplier below).",
+			"default": 2,
+			"min": 0,
+			"max": 10,
+			"control": {
+				"arrows": true,
+				"slider": true
+			}
+		},
+		"energy-per-attempt": {
+			"type": "int",
+			"name": "Energy per attempt",
+			"description": "Extra energy burned on every attempt. Burned energy counts towards the payout.",
+			"default": 0,
+			"min": 0,
+			"max": 5,
+			"control": {
+				"arrows": true,
+				"slider": true
+			}
+		},
+		"energy-max": {
+			"type": "int",
+			"name": "Maximum energy",
+			"description": "Energy capacity.",
+			"default": 25,
+			"min": 5,
+			"max": 100,
+			"control": {
+				"arrows": true,
+				"slider": true
+			}
+		},
+		"energy-regen-seconds": {
+			"type": "int",
+			"name": "Seconds per energy",
+			"description": "Seconds needed to regenerate one point of energy.",
+			"default": 120,
+			"min": 10,
+			"max": 3600
+		},
+		"energy-reward-multiplier": {
+			"type": "float",
+			"name": "Energy reward multiplier",
+			"description": "Scales how strongly burned energy changes the payout (1.0 = +/-25% per point).",
+			"default": 1.0,
+			"min": 0.25,
+			"max": 3.0,
+			"control": {
+				"arrows": true,
+				"slider": true
+			}
+		},
+		"energy-disabled-percent": {
+			"type": "int",
+			"name": "Payout when energy is off",
+			"description": "Percent of the normal payout you receive when energy is disabled.",
+			"default": 25,
+			"min": 1,
+			"max": 50,
+			"control": {
+				"arrows": true,
+				"slider": true
+			}
+		},
+		"t-econ": {
+			"type": "title",
+			"name": "Subscriptions & Rotation"
+		},
+		"sub-period-minutes": {
+			"type": "int",
+			"name": "Subscription 'month' length (real minutes)",
+			"description": "How long one simulated month lasts before auto-renew.",
+			"default": 30,
+			"min": 1,
+			"max": 1440
+		},
+		"rotation-hours": {
+			"type": "int",
+			"name": "Shop rotation slot (hours)",
+			"default": 6,
+			"min": 1,
+			"max": 168
+		},
+		"t-pack": {
+			"type": "title",
+			"name": "Level Packs"
+		},
+		"pack-menu-button": {
+			"type": "bool",
+			"name": "Show 2.21 Pack button",
+			"description": "Shows the Geometry Dash 2.21 Pack button on the main menu (the pack is always reachable from the Shop too).",
+			"default": true
+		},
+		"t-data": {
+			"type": "title",
+			"name": "Mod Data"
+		},
+		"reset-mod-data": {
+			"type": "button",
+			"name": "Reset mod data",
+			"description": "Erases only this mod's saved data (wallet, purchases, stats...). Asks for confirmation first. Never touches Geometry Dash's own data.",
+			"buttons": {
+				"reset": "RESET MOD DATA"
+			}
+		},
+		"give-all-money": {
+			"type": "button",
+			"name": "Maximum cash",
+			"description": "Sets the mod's fictional wallet to $2,147,483,647.00. Fictional credit only.",
+			"buttons": {
+				"give": "GIVE ME ALL THE MONEY"
+			}
+		}
+	}
+}
