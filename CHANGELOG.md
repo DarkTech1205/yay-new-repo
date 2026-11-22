@@ -14,7 +14,7 @@
 **Visuals**
 * All mod sprites redrawn in a Geometry-Dash-inspired style (outlines, gradients, highlights, crisp 4x-supersampled edges); ads use a new outlined promo panel; new logo, demon badge, pack and level art.
 **2.21 Pack**
-* New pack screen: artwork, name, two Demon levels (Explorers 2 by Mathiscreator, Firebird by seannnn) with icons, difficulty, reward, price, ownership, **separate purchases** ($9.99 each), independent persistent ownership, Play opens GD's own level page. Reachable from the main menu button and the Shop.
+* New pack screen: artwork, name, two Demon levels (Explorers by Mathiscreator, Firebird by seannnn) with icons, difficulty, reward, price, ownership, **separate purchases** ($9.99 each), independent persistent ownership, Play opens GD's own level page. Reachable from the main menu button and the Shop.
 * Level data from the supplied .gdlvl files with the 3 user coins of each level removed; supplied songs bundled.
 **Settings**: grouped (Branding, Promotional Opportunities, Energy, Subscriptions, Level Packs, Mod Data).
 **Packaging**: project delivered as two upload parts (<=100 files each).
