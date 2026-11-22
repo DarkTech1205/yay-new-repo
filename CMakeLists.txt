@@ -14,6 +14,8 @@ add_library(${PROJECT_NAME} SHARED ${SOURCES})
 if (NOT DEFINED ENV{GEODE_SDK})
     message(FATAL_ERROR "Set GEODE_SDK to a checkout of geode-sdk/geode at tag v6.0.0-beta.1")
 endif()
+
+set(SKIP_BUILDING_CODEGEN OFF CACHE BOOL "" FORCE)
 add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 
 setup_geode_mod(${PROJECT_NAME})
